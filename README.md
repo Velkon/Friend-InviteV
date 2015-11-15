@@ -2,4 +2,4 @@ This is an addon for referring people to your serer, directly based off of *anot
 
 You can view the serverside file for configs and shit.
 
-** Features free support! Just report it in the issues section **
+**Features free support! Just report it in the issues section**

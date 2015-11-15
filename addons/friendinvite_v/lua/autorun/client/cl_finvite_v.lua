@@ -8,8 +8,6 @@ Friend Invite - Velkon.
 
 -- This part sucks
 -- Sorry but I can't code derma
-
-net.Receive("finv.menu",function()
 surface.CreateFont("FinvShit",{
 	font = "DermaLarge",
 	size = 20,
@@ -25,6 +23,8 @@ surface.CreateFont("FinvShitPly",{
 	font = "DermaLarge",
 	size = 27
 	})
+
+net.Receive("finv.menu",function()
 
 local blur = Material('pp/blurscreen') -- Mikey
 local function draw_Blur(panel, amount) 

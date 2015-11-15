@@ -41,9 +41,9 @@ back:MakePopup()
 back:Center()
 back:SetTitle("Friend-Invite!")
 function back:Paint(w,h)
-	draw.RoundedBox(0,0,0,w,h,Color(0,0,0,100))
-	draw_Blur(self,5)
-	draw.RoundedBox(0,0,0,w,25,Color(0,0,0,220)) 
+	draw_Blur( self, 5 )
+	draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 220 ) )
+	draw.RoundedBox( 0, 0, 0, w, 25, Color( 0, 0, 0, 220 ) ) 
 	draw.DrawText("Who invited you to the server?","FinvShit",w/2,40,Color(255,255,255),TEXT_ALIGN_CENTER) 
 end
 

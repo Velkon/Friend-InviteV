@@ -40,11 +40,15 @@ back:SetSize(300,300)
 back:MakePopup()
 back:Center()
 back:SetTitle("Friend-Invite!")
-function back:Paint(w,h)
+function back:Paint( self, w, h )
 	draw_Blur( self, 5 )
 	draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 220 ) )
-	draw.RoundedBox( 0, 0, 0, w, 25, Color( 0, 0, 0, 220 ) ) 
+	draw.RoundedBox( 0, 0, 0, w, 30, Color( 2, 152 , 219, 255 ) ) 
+	draw.RoundedBox( 0, 0, 25, w, 5, Color( 41, 128, 255, 255 ) )
 	draw.DrawText("Who invited you to the server?","FinvShit",w/2,40,Color(255,255,255),TEXT_ALIGN_CENTER) 
+	
+	surface.SetDrawColor( 41, 128, 255, 255 )
+        surface.DrawOutlinedRect( 0, 0, w, h )
 end
 
 local panel = vgui.Create("DPanel",back)

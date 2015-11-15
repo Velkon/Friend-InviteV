@@ -42,15 +42,15 @@ end
 
 local back = vgui.Create("DFrame")
 back:SetSize(300,300)
-back:SetFont("FinvShit2")
 back:MakePopup()
 back:Center()
-back:SetTitle("Friend-Invite!")
+//back:SetTitle("Friend-Invite!")
 function back:Paint( w, h )
 	draw_Blur( self, 5 )
 	draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 220 ) )
 	draw.RoundedBox( 0, 0, 0, w, 30, Color( 2, 152 , 219, 255 ) ) 
 	draw.RoundedBox( 0, 0, 25, w, 5, Color( 41, 128, 255, 255 ) )
+	draw.DrawText("Friend-Invte!", "FinvShit2", w/2, 4, color_white, TEXT_ALIGN_CENTER)
 	draw.DrawText("Who invited you to the server?","FinvShit",w/2,40,Color(255,255,255),TEXT_ALIGN_CENTER) 
 	
 	surface.SetDrawColor( 41, 128, 255, 255 )

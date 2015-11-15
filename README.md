@@ -2,7 +2,7 @@ This is an addon for referring people to your serer, directly based off of *anot
 
 You can view the serverside file for configs and shit.
 
->inb4 Copy paste
+Copy paste:
 
 Features:
 Quick menu to select who invited you

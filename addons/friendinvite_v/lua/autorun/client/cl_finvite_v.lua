@@ -16,6 +16,11 @@ surface.CreateFont("FinvShit",{
 	weight = 1000,
 	antialias = true
 	})
+surface.CreateFont("FinvShit2",{
+	font = "DermaLarge",
+	size = 17,
+	antialias = true
+	})
 surface.CreateFont("FinvShitPly",{
 	font = "DermaLarge",
 	size = 27
@@ -37,10 +42,11 @@ end
 
 local back = vgui.Create("DFrame")
 back:SetSize(300,300)
+back:SetFont("FinvShit2")
 back:MakePopup()
 back:Center()
 back:SetTitle("Friend-Invite!")
-function back:Paint( self, w, h )
+function back:Paint( w, h )
 	draw_Blur( self, 5 )
 	draw.RoundedBox( 0, 0, 0, w, h, Color( 0, 0, 0, 220 ) )
 	draw.RoundedBox( 0, 0, 0, w, 30, Color( 2, 152 , 219, 255 ) ) 

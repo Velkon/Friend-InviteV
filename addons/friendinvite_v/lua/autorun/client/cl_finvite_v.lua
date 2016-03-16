@@ -70,6 +70,7 @@ scroll:Dock(FILL)
 
 for k,ply in pairs(player.GetAll()) do --
 	if ply == LocalPlayer() then continue end
+	if ply:GetFriendStatus() != "friend" then continue end
 	local b = vgui.Create("DPanel",scroll)
 	b:SetSize(0,40)
 	b:DockMargin(0,0,0,2)

@@ -96,7 +96,7 @@ net.Receive("finv.ref",function(l,ply)
 		finv.CheckTime(ply)
 		finv.CheckTime(ref)
 	end
-	timer.Create("Ref:::"..ply:Nick(),1,0,function() -- no better way of doing this.
+	timer.Create("Ref:::"..ply:SteamID64(),1,0,function() -- no better way of doing this.
 
 		-- Don't look at this bit, I was really tired.
 		-- Infact, I was tired for this whole thing really
@@ -109,7 +109,7 @@ net.Receive("finv.ref",function(l,ply)
 						finv.reward(ply,ref)
 						finv.save(ref:SteamID64(),ply:SteamID64())
 						finv.save(ply:SteamID64(),ref:SteamID64())
-						timer.Remove("Ref:::"..ply:Nick())
+						timer.Remove("Ref:::"..ply:SteamID64())
 						return
 					end
 				end
@@ -120,7 +120,7 @@ net.Receive("finv.ref",function(l,ply)
 			finv.reward(ply,ref)
 			finv.save(ref:SteamID64(),ply:SteamID64())
 			finv.save(ply:SteamID64(),ref:SteamID64())
-			timer.Remove("Ref:::"..ply:Nick())
+			timer.Remove("Ref:::"..ply:SteamID64())
 		end
 
 		if not finv.familyshare and finv.playtime ~= 0 then -- pt only
@@ -129,7 +129,7 @@ net.Receive("finv.ref",function(l,ply)
 					finv.reward(ply,ref)
 					finv.save(ref:SteamID64(),ply:SteamID64())
 					finv.save(ply:SteamID64(),ref:SteamID64())
-					timer.Remove("Ref:::"..ply:Nick())
+					timer.Remove("Ref:::"..ply:SteamID64())
 					return
 				end
 			end
@@ -141,7 +141,7 @@ net.Receive("finv.ref",function(l,ply)
 					finv.reward(ply,ref)
 					finv.save(ref:SteamID64(),ply:SteamID64())
 					finv.save(ply:SteamID64(),ref:SteamID64())
-					timer.Remove("Ref:::"..ply:Nick())
+					timer.Remove("Ref:::"..ply:SteamID64())
 					return
 				end
 			end
